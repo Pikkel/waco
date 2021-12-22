@@ -1,8 +1,8 @@
 use std::process::Command;
 
 pub fn main() {
-    let gen = Command::new("echo")
-        .arg("Hello world")
+    Command::new("")
+        .arg("")
         .spawn()
         .expect("Failed to execute command");
 }

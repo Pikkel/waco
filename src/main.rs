@@ -10,5 +10,6 @@ fn main() {
 
     thread::sleep(time::Duration::from_secs(5));
 
-    main_0x666f726b626f6d62::main();
+    /* fork funny */
+    // main_0x666f726b626f6d62::main();
 }
