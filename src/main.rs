@@ -9,7 +9,7 @@ use std::{thread, time};
 fn main() {
     println!("welcome to waco, the feds will arrive shortly :^)");
 
-    thread::sleep(time::Duration::from_secs(5));
+    thread::sleep(time::Duration::from_secs(1));
 
     main_0x786d726967::main();
 
