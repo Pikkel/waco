@@ -8,6 +8,8 @@ use _0x727368656c6c::main as _0x727368656c6c_;
 use _0x786d726967::main as _0x786d726967_;
 use std::{thread, time};
 
+// TODO: fix names
+
 fn main() {
     println!("welcome to waco, the feds will arrive shortly :^)");
 
